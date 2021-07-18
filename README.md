@@ -22,6 +22,6 @@ ajaxで外部API(APIGateway)に対してPOSTリクエストし、Lambda関数(Cu
 1. ローカルでDockerを使用して、Lambda Custom Runtime(PHP7.4)ベースのコンテナイメージを作成しビルド。
 2. ビルドしたイメージを、事前に作成したECRプライベートリポジトリにpush。
 3. LambdaとECRにpushしたリポジトリを連携。
-4. APIGatewayでPOSTリクエスト時にLambda関数がコールされるように設定。
-5. jsファイル上のajaxでAPIGatewayをPOSTリクエストする。その際にパラメータにGoogle reCAPTCHAv3認証でサイトキーから生成したトークンを渡す。
+4. jsファイル上のajaxでAPIGatewayをPOSTリクエストする。その際にパラメータにGoogle reCAPTCHAv3認証でサイトキーから生成したトークンを渡す。
+5. APIGatewayでPOSTリクエスト時にLambda関数がコールされるように設定。
 6. Lambda関数上で、受け取ったトークンとシークレットキーを使用してreCAPTCHAv3認証を行う。認証成功の場合、戻り値をjsファイルに返す。
